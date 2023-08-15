@@ -1,0 +1,270 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+    width: auto;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.container{
+    background: #fff;
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+    padding: 10px;
+}
+header {
+   padding: 10px;
+
+}
+header input{
+    width: 70%;
+    outline: none;
+    border: none;
+    height: 20px;
+}
+header i {
+    cursor: pointer;
+    font-size: 15px;
+}
+header i:hover{
+    color: aquamarine;
+    transition: .2s;
+}
+/*margin search button and input*/
+header input, header i{
+    margin: 0px 10px;
+}
+
+/*weather Container */
+.weather{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.weather i{
+    font-size: 50px;
+    
+}
+.weather i,.temp {
+    margin:  0px 20px;
+}
+/*temperature*/
+.temp span{
+    font-size: 30px;
+}
+.temp p{
+    margin-top: 5px;
+    font-size: 12px;
+   font-weight: bold;
+}
+.temp h1{
+    font-size: 15px;
+}
+
+/*other Info*/
+    .otherInfo{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    }
+    .windspeed,.humidity{
+    margin: 0px 40px;
+    }
+
+    .windspeed i,.humidity i{
+    font-size: 35px;
+    }
+    .windspeed h3,.humidity h3{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+    }
+
+/*Media query Manipulation*/
+
+
+/*Cellphones*/
+@media (170px <= width <= 220px) and (orientation: portrait){
+   
+    .container{
+        background: #fff;
+        height: 100%;
+        width: 100%;
+        border-radius: 0px;
+        padding: 5px;
+        
+    }
+
+    /*resizing fonts*/
+        header input{
+            width: 50%;
+            outline: none;
+            border: none;
+            height: 8px;
+            font-size: 5px;
+        }
+        header input::placeholder{
+            font-size: 8px;
+        }
+        header i {
+            cursor: pointer;
+            font-size: 8px;
+        }
+        .weather i{
+            font-size: 20px;
+            
+        }
+        .temp span{
+            font: size 10px;
+
+        }
+        .temp p{
+            margin-top: 5px;
+            font-size: 8px;
+           font-weight: bold;
+        }
+        .windspeed i,.humidity i{
+            font-size: 15px;
+        }
+    /*adjusting paddings*/
+    header {
+        padding: 6px;
+     
+     }
+     .weather{
+        padding: 17px;
+        display: flex;
+        justify-content: center;
+        margin-top: 7px;
+    }
+    .windspeed h3,.humidity h3{
+        font-size: 8px;
+        text-align: center;
+        margin-top: 10px;
+    }
+     /*positioning divs*/
+     .weather,.otherInfo{
+        margin-top: 70px;
+   }
+}
+@media (220px <= width <= 320px) and (orientation: portrait) {
+
+
+   
+    .container{
+        background: #fff;
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        padding: 5px;
+        
+    }
+
+    /*resizing fonts*/
+        header input{
+            width: 70%;
+            outline: none;
+            border: none;
+            height: 15px;
+            font-size: 12px;
+        }
+        header input::placeholder{
+            font-size: 10px;
+        }
+        header i {
+            cursor: pointer;
+            font-size: 12px;
+        }
+        .weather i{
+            font-size: 40px;
+            
+        }
+        .temp span{
+            font-size:20px;
+
+        }
+        .temp p{
+            margin-top: 5px;
+            font-size: 10px;
+           font-weight: bold;
+        }
+        .windspeed i,.humidity i{
+            font-size: 25px;
+        }
+    /*adjusting paddings*/
+    header {
+        padding: 6px;
+     
+     }
+     .weather{
+        padding: 17px;
+        display: flex;
+        justify-content: center;
+        margin-top: 7px;
+    }
+    .windspeed h3,.humidity h3{
+        font-size: 8px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .weather,.otherInfo{
+        margin-top: 100px;
+   }
+
+  }
+  @media (320px <= width <= 400px) and (orientation: portrait) {
+
+    body{
+    padding:  20px;
+    }
+    .container{
+        background: #fff;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        padding: 5px;
+        margin: 10px;
+    }
+    /*resizing fonts*/
+    header input{
+        width: 70%;
+        outline: none;
+        border: none;
+        height: 15px;
+        font-size: 12px;
+    }
+    header input::placeholder{
+        font-size: 10px;
+    }
+    header i {
+        cursor: pointer;
+        font-size: 13px;
+    }
+       /*positioning divs*/
+       .weather,.otherInfo{
+            margin-top: 100px;
+       }
+    
+  }
+
+  /*Tablets*/
+  @media (401px <= width <= 603px) and (orientation: portrait) {
+    .container{
+        margin: 20px;
+    }
+
+  }
